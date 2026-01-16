@@ -57,17 +57,47 @@ footer {
     color: #94a3b8;
     border-top: 2px solid #0ea5e933;
 }
+
+/* Pop-up flashy pour texte d’introduction */
+#popupIntro {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    text-align: center;
+    animation: flash 1s infinite alternate;
+    z-index: 1000;
+}
+@keyframes flash {
+    0% { background-color: #ff0000; }
+    50% { background-color: #ff8c00; }
+    100% { background-color: #ff0000; }
+}
 </style>
 </head>
 
 <body>
 
-<!-- Nouveau texte d’introduction pour visiteurs et AdSense -->
-<p>
+<!-- Texte d’introduction en pop-up flashy -->
+<div id="popupIntro">
 Découvrez des astuces, tutoriels et conseils pratiques pour simplifier votre vie numérique ! 
 Notre site vous aide à optimiser vos logiciels, sécuriser vos données, résoudre vos problèmes informatiques 
 et maîtriser les nouvelles technologies. Améliorez vos compétences et restez à jour avec nos guides faciles à suivre.
-</p>
+</div>
+
+<script>
+// Clique sur le pop-up ouvre un lien (facultatif)
+document.getElementById("popupIntro").onclick = function() {
+    window.open("https://www.example.com", "_blank"); // mettre ton lien ici
+};
+</script>
 
 <!-- En-tête -->
 <header>
