@@ -1,154 +1,186 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
+<title>Astuces Informatiques</title>
 
-<title>Astuces Informatiques – Tutos PC, Windows et Internet</title>
-
-<meta name="description" content="Astuces informatiques, tutoriels PC et Windows, sécurité et optimisation. Apprenez à accélérer un PC lent et résoudre vos problèmes facilement.">
-<meta name="keywords" content="pc lent, accélérer pc, astuces informatique, tutoriel windows, tuto pc, ordinateur lent">
-
-<!-- Script AdSense -->
+<!-- Script Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6089130243985664"
-crossorigin="anonymous"></script>
+     crossorigin="anonymous"></script>
 
 <style>
+
+/* Corps de la page */
 body {
     font-family: Arial, sans-serif;
     background-image: url('https://raw.githubusercontent.com/siochemickael-maker/mon-site/main/IMG_20260101_000739.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
     margin: 0;
-    padding: 0;
-    color: #e5e7eb;
+    color: #f3f4f6;
 }
 
+/* Bandeau principal */
 header {
-    background: linear-gradient(90deg, #0ea5e9, #22c55e);
-    padding: 40px;
+    background: rgba(0,0,0,0.75);
+    padding: 30px;
     text-align: center;
-    color: #fff;
-    border-radius: 0 0 20px 20px;
 }
 
-header img { width: 100px; margin-bottom: 10px; }
+header h1 {
+    font-size: 40px;
+    color: #22d3ee;
+}
 
-section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+/* Menu */
+nav {
+    background: #020617;
+    padding: 12px;
+    text-align: center;
+}
 
-h2 { color: #0ea5e9; border-bottom: 2px solid #0ea5e933; padding-bottom: 10px; }
+nav a {
+    color: #22d3ee;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-.astuce {
-    background: rgba(0,0,0,0.6);
-    padding: 20px;
-    margin: 15px 0;
+nav a:hover {
+    color: white;
+}
+
+/* Sections */
+section {
+    background: rgba(0,0,0,0.8);
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 900px;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(14,165,233,0.2);
+    box-shadow: 0 0 15px black;
 }
 
-a { color: #22c55e; text-decoration: none; }
-a:hover { text-decoration: underline; }
+h2 {
+    color: #38bdf8;
+}
+
+/* Blocs astuces */
+.astuce {
+    background: rgba(2,6,23,0.8);
+    padding: 15px;
+    margin-top: 12px;
+    border-left: 5px solid #22d3ee;
+    border-radius: 10px;
+}
+
+/* Popup texte */
+.popup {
+    background: linear-gradient(135deg,#22d3ee,#6366f1);
+    color: #020617;
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+    animation: flash 2s infinite;
+    font-weight: bold;
+}
+
+@keyframes flash {
+    0% {box-shadow: 0 0 5px #22d3ee;}
+    50% {box-shadow: 0 0 25px #22d3ee;}
+    100% {box-shadow: 0 0 5px #22d3ee;}
+}
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: rgba(2,6,23,0.7);
-    color: #94a3b8;
+    background: #020617;
+    margin-top: 40px;
 }
 
-/* Pop-up intro flashy */
-#popupIntro {
-    position: fixed;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: red;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 15px;
-    font-weight: bold;
-    text-align: center;
-    animation: flash 1s infinite alternate;
-    z-index: 9999;
-}
-
-@keyframes flash {
-    0% { background:red; }
-    50% { background:orange; }
-    100% { background:red; }
-}
 </style>
 </head>
 
 <body>
 
-<!-- POPUP INTRO -->
-<div id="popupIntro">
-Découvrez des astuces, tutoriels et conseils pratiques pour simplifier votre vie numérique !
-</div>
-
-<!-- EN-TÊTE -->
 <header>
-<img src="https://img.icons8.com/color/96/000000/computer.png">
 <h1>💻 Astuces Informatiques</h1>
-<p>Tutos PC – Windows – Sécurité – Optimisation</p>
+<p>Apprends à réparer, optimiser et sécuriser ton ordinateur</p>
 </header>
 
-<!-- PUB 1 -->
-<ins class="adsbygoogle"
-style="display:block;text-align:center"
-data-ad-client="ca-pub-6089130243985664"
-data-ad-slot="1234567890"
-data-ad-format="auto"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#pc-lent">PC lent</a>
+<a href="#virus">Virus</a>
+<a href="#stockage">Stockage</a>
+<a href="#wifi">Wi-Fi</a>
+</nav>
 
-<!-- ASTUCES RAPIDES -->
-<section>
-<h2>💡 Astuces rapides</h2>
-<div class="astuce">Capture d’écran : Windows + Maj + S</div>
-<div class="astuce">Fermer un programme bloqué : Ctrl + Maj + Échap</div>
-<div class="astuce">Nouvel onglet : Ctrl + T</div>
-</section>
-
-<!-- TUTO PC LENT -->
-<section>
-<h2>📝 Tuto : Accélérer un PC lent (guide complet)</h2>
-
-<div class="astuce"><strong>😩 Problème :</strong><br>PC lent au démarrage, logiciels lents, ordinateur qui rame.</div>
-
-<div class="astuce"><strong>✅ Étape 1 :</strong> Nettoyage de disque (Démarrer → Nettoyage de disque)</div>
-<div class="astuce"><strong>✅ Étape 2 :</strong> Ctrl + Maj + Échap → Démarrage → désactiver l’inutile</div>
-<div class="astuce"><strong>✅ Étape 3 :</strong> Supprimer les logiciels inutiles</div>
-<div class="astuce"><strong>✅ Étape 4 :</strong> Analyse antivirus</div>
-<div class="astuce"><strong>✅ Étape 5 :</strong> Mettre Windows à jour</div>
-
-<div class="astuce">🚀 Astuce bonus : passer à un SSD multiplie la vitesse.</div>
-
-<div class="astuce">
-🎥 <strong>Version vidéo :</strong><br>
-<a href="https://www.youtube.com/TONLIEN" target="_blank">Voir le tuto vidéo</a>
+<section id="accueil">
+<div class="popup">
+Découvrez des astuces, tutoriels et conseils pratiques pour simplifier votre vie numérique !  
+Notre site vous aide à optimiser vos logiciels, sécuriser vos données, résoudre vos problèmes informatiques et maîtriser les nouvelles technologies.
 </div>
 </section>
 
-<!-- PUB 2 -->
-<ins class="adsbygoogle"
-style="display:block;text-align:center"
-data-ad-client="ca-pub-6089130243985664"
-data-ad-slot="1234567891"
-data-ad-format="auto"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<!-- ================= PC LENT ================= -->
 
-<!-- TUTOS VIDEO -->
-<section>
-<h2>🎥 Tutos vidéo</h2>
-<div class="astuce">🎬 <a href="#">Accélérer un PC lent</a></div>
-<div class="astuce">🎬 <a href="#">Supprimer un virus</a></div>
-<div class="astuce">🎬 <a href="#">Nettoyer Windows</a></div>
+<section id="pc-lent">
+<h2>📝 Tuto : Accélérer un PC lent</h2>
+
+<div class="astuce"><strong>Problème :</strong> PC lent, démarrage long, logiciels qui rament.</div>
+
+<div class="astuce"><strong>Étape 1 :</strong> Nettoyage de disque.</div>
+<div class="astuce"><strong>Étape 2 :</strong> Désactiver les programmes au démarrage.</div>
+<div class="astuce"><strong>Étape 3 :</strong> Supprimer logiciels inutiles.</div>
+<div class="astuce"><strong>Étape 4 :</strong> Analyse antivirus.</div>
+<div class="astuce"><strong>Étape 5 :</strong> Mettre Windows à jour.</div>
+
+<div class="astuce">🎥 <a href="https://www.youtube.com/TONLIEN" target="_blank">Voir le tuto vidéo</a></div>
 </section>
 
-<!-- PIED DE PAGE -->
+<!-- ================= VIRUS ================= -->
+
+<section id="virus">
+<h2>📝 Tuto : Supprimer un virus</h2>
+
+<div class="astuce"><strong>Étape 1 :</strong> Mise à jour Sécurité Windows.</div>
+<div class="astuce"><strong>Étape 2 :</strong> Analyse complète.</div>
+<div class="astuce"><strong>Étape 3 :</strong> Supprimer programmes suspects.</div>
+<div class="astuce"><strong>Étape 4 :</strong> Nettoyer navigateur.</div>
+
+<div class="astuce">🎥 <a href="https://www.youtube.com/TONLIEN" target="_blank">Voir le tuto vidéo</a></div>
+</section>
+
+<!-- ================= STOCKAGE ================= -->
+
+<section id="stockage">
+<h2>📝 Tuto : Libérer de l’espace disque</h2>
+
+<div class="astuce"><strong>Étape 1 :</strong> Nettoyage de disque.</div>
+<div class="astuce"><strong>Étape 2 :</strong> Fichiers temporaires.</div>
+<div class="astuce"><strong>Étape 3 :</strong> Désinstaller gros logiciels.</div>
+<div class="astuce"><strong>Étape 4 :</strong> Déplacer photos et vidéos.</div>
+
+<div class="astuce">🎥 <a href="https://www.youtube.com/TONLIEN" target="_blank">Voir le tuto vidéo</a></div>
+</section>
+
+<!-- ================= WIFI ================= -->
+
+<section id="wifi">
+<h2>📝 Tuto : Réparer un Wi-Fi lent</h2>
+
+<div class="astuce"><strong>Étape 1 :</strong> Redémarrer la box.</div>
+<div class="astuce"><strong>Étape 2 :</strong> Redémarrer le PC.</div>
+<div class="astuce"><strong>Étape 3 :</strong> Oublier et reconnecter le Wi-Fi.</div>
+<div class="astuce"><strong>Étape 4 :</strong> Mettre à jour Windows.</div>
+
+<div class="astuce">🎥 <a href="https://www.youtube.com/TONLIEN" target="_blank">Voir le tuto vidéo</a></div>
+</section>
+
 <footer>
-© 2026 – Astuces Informatiques
+© 2026 — Astuces Informatiques | Tous droits réservés
 </footer>
 
 </body>
